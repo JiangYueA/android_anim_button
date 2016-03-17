@@ -121,7 +121,7 @@ public class AnimImageView extends ImageView {
         }
     }
 
-
+    /* set get */
     public float getFirstScale() {
         return firstScale;
     }
