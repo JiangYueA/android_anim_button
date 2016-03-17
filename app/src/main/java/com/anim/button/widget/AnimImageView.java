@@ -45,6 +45,7 @@ public class AnimImageView extends ImageView {
         secondShowAnimator.setInterpolator(new DecelerateInterpolator());
         secondUnShowAnimator = ObjectAnimator.ofFloat(this, "secondScale", 1, 0).setDuration(DEFAULT_DURATION_TIME);
         secondUnShowAnimator.setInterpolator(new DecelerateInterpolator());
+        //初始化动画
         startAnimShow();
     }
 
