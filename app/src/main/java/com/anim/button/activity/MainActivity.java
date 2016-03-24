@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
     }
 
     private void initView() {
+        //缩放btn
         animImageView = (AnimImageView) findViewById(R.id.img_anim_button);
         animImageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +35,7 @@ public class MainActivity extends Activity {
                 animImageView.startAnimShow();
             }
         });
+        //波纹btn
         rippleImageView = (RippleImageView) findViewById(R.id.img_ripple_button);
         rippleImageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
