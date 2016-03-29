@@ -1,6 +1,6 @@
 # 
 # Android_Anim_Button 
 
-![Android_Anim_Button](https://github.com/Nightonke/BlurLockView/blob/master/Pictures/in_out.gif)  
+![Android_Anim_Button](https://github.com/JiangYueA/android_anim_button/blob/master/picture/text.gif)  
 
 Lock view with btn effect. Easy to customise.
