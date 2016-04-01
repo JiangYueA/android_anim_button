@@ -30,6 +30,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <com.anim.button.widget.FillPopImageView
+                android:id="@+id/img_fill_button"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                app:firstView="@drawable/fill_circle_bg"
+                app:secondView="@drawable/fill_circle_fill_bg" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:orientation="horizontal">
 
             <com.anim.button.widget.RippleImageView

@@ -8,12 +8,14 @@ import android.view.View;
 import com.anim.button.R;
 import com.anim.button.util.DisplayUtil;
 import com.anim.button.widget.AnimImageView;
+import com.anim.button.widget.FillPopImageView;
 import com.anim.button.widget.RippleImageView;
 
 
 public class MainActivity extends Activity {
 
     private AnimImageView animImageView;
+    private FillPopImageView fillPopImageView;
     private RippleImageView rippleImageView;
 
     @Override
@@ -45,5 +47,12 @@ public class MainActivity extends Activity {
             }
         });
         //渐引btn
+        fillPopImageView = (FillPopImageView) findViewById(R.id.img_fill_button);
+        fillPopImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fillPopImageView.startAnimShow();
+            }
+        });
     }
 }
