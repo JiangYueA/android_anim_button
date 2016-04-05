@@ -11,7 +11,9 @@ import com.anim.button.widget.AnimImageView;
 import com.anim.button.widget.FillPopImageView;
 import com.anim.button.widget.RippleImageView;
 
-
+/**
+ * 按钮显示主Activity
+ */
 public class MainActivity extends Activity {
 
     private AnimImageView animImageView;
