@@ -48,6 +48,27 @@
             android:layout_marginLeft="10dp"
             android:orientation="horizontal">
 
+            <com.anim.button.widget.FadePopImageView
+                android:id="@+id/img_fade_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="赞"
+                    android:textColor="#aaaaaa"
+                    android:textSize="10sp" />
+            </com.anim.button.widget.FadePopImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
             <com.anim.button.widget.RippleImageView
                 android:id="@+id/img_ripple_button"
                 android:layout_width="50dp"

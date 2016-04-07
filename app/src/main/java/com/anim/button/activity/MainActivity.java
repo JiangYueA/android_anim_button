@@ -8,6 +8,7 @@ import android.view.View;
 import com.anim.button.R;
 import com.anim.button.util.DisplayUtil;
 import com.anim.button.widget.AnimImageView;
+import com.anim.button.widget.FadePopImageView;
 import com.anim.button.widget.FillPopImageView;
 import com.anim.button.widget.RippleImageView;
 
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
     private AnimImageView animImageView;
     private FillPopImageView fillPopImageView;
     private RippleImageView rippleImageView;
+    private FadePopImageView fadeImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 fillPopImageView.startAnimShow();
+            }
+        });
+        //渐变btn
+        fadeImageView = (FadePopImageView) findViewById(R.id.img_fade_button);
+        fadeImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fadeImageView.startFadeAnimationClick();
             }
         });
     }
