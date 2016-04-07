@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 /**
  * Created by jiangyue on 16/4/5.
+ * 渐变按钮
  */
 public class FadePopImageView extends RelativeLayout {
 
