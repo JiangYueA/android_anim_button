@@ -66,5 +66,6 @@ public class MainActivity extends Activity {
                 fadeImageView.startFadeAnimationClick();
             }
         });
+        //
     }
 }
