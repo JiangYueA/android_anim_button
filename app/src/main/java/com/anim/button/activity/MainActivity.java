@@ -11,6 +11,7 @@ import com.anim.button.widget.AnimImageView;
 import com.anim.button.widget.FadePopImageView;
 import com.anim.button.widget.FillPopImageView;
 import com.anim.button.widget.RippleImageView;
+import com.anim.button.widget.TransitionImageView;
 
 /**
  * 按钮显示主Activity
@@ -21,6 +22,7 @@ public class MainActivity extends Activity {
     private FillPopImageView fillPopImageView;
     private RippleImageView rippleImageView;
     private FadePopImageView fadeImageView;
+    private TransitionImageView transitionImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,5 +69,12 @@ public class MainActivity extends Activity {
             }
         });
         //路径btn
+        transitionImageView = (TransitionImageView) findViewById(R.id.img_transition_button);
+        transitionImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                transitionImageView.simulateProgress();
+            }
+        });
     }
 }
