@@ -76,5 +76,6 @@ public class MainActivity extends Activity {
                 transitionImageView.simulateProgress();
             }
         });
+        //btn
     }
 }
