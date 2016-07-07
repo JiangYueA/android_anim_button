@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.anim.button.widget.gallery.GalleryRecyclerView
+        android:id="@+id/gallery_content"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:rvp_singlePageFling="true"
+        app:rvp_triggerOffset="0.1" />
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.anim.button.widget;
+package com.anim.button.widget.button;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;

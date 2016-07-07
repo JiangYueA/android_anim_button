@@ -34,4 +34,11 @@
         </attr>
     </declare-styleable>
 
+    <!-- 基金组合滑块 2016-6-16 16:12:00 jiang -->
+    <declare-styleable name="GalleryRecyclerView">
+        <attr name="rvp_triggerOffset" format="float" />
+        <attr name="rvp_flingFactor" format="float" />
+        <attr name="rvp_singlePageFling" format="boolean" />
+    </declare-styleable>
+
 </resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff">
+
+    <ImageView
+        android:id="@+id/img_footer_default"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#000000" />
+
+    <ProgressBar
+        android:id="@+id/pbar_footer_default"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_footer_default"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_footer_default"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="50dp"
+        android:paddingTop="20dp"
+        android:text="loading"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+</RelativeLayout>
