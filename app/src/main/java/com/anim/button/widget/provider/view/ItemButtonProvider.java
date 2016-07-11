@@ -37,8 +37,6 @@ public class ItemButtonProvider implements ObjectItemProvider {
         final ItemButtonProvider.ViewHolder holder = (ItemButtonProvider.ViewHolder) view.getTag();
         // TODO 不设置tag id会覆盖holder的tag
         if (AndroidUtil.shouldRedraw(holder.animImageView, R.id.id_tag, "tag id")) {
-
-
             //缩放btn
             holder.animImageView.setOnClickListener(new View.OnClickListener() {
                 @Override
