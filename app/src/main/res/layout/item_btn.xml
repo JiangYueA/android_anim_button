@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="10dp">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="6dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <com.anim.button.widget.button.AnimImageView
                 android:id="@+id/img_anim_button"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
                 app:firstDraw="@drawable/ic_heart"
                 app:secondDraw="@drawable/ic_heart_fill" />
 
@@ -29,14 +29,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
             android:layout_marginTop="2dp"
             android:orientation="horizontal">
 
             <com.anim.button.widget.button.FillPopImageView
                 android:id="@+id/img_fill_button"
-                android:layout_width="46dp"
-                android:layout_height="46dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
                 app:firstView="@drawable/fill_circle_bg"
                 app:secondView="@drawable/fill_circle_fill_bg" />
 
@@ -45,34 +45,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:orientation="horizontal">
-
-            <com.anim.button.widget.button.FadePopImageView
-                android:id="@+id/img_fade_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp">
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:gravity="center"
-                    android:text="赞"
-                    android:textColor="#aaaaaa"
-                    android:textSize="10sp" />
-            </com.anim.button.widget.button.FadePopImageView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <com.anim.button.widget.button.RippleImageView
                 android:id="@+id/img_ripple_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
                 app:rb_color="#ea4b2b"
                 app:rb_duration="3000"
                 app:rb_radius="8dp"
@@ -92,7 +71,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
             android:orientation="horizontal"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
@@ -100,9 +79,30 @@
 
             <com.anim.button.widget.button.TransitionImageView
                 android:id="@+id/img_transition_button"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
                 android:background="#00aaaaaa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <com.anim.button.widget.button.FadePopImageView
+                android:id="@+id/img_fade_button"
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="赞"
+                    android:textColor="#aaaaaa"
+                    android:textSize="10sp" />
+            </com.anim.button.widget.button.FadePopImageView>
         </LinearLayout>
 
     </LinearLayout>

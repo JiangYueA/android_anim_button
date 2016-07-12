@@ -3,7 +3,6 @@ package com.anim.button.widget.provider.view;
 import android.content.Context;
 import android.os.Parcelable;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -45,13 +44,12 @@ public class ItemButtonProvider implements ObjectItemProvider {
                 }
             });
             //波纹btn
-            holder.rippleImageView.setOnTouchListener(new View.OnTouchListener() {
+            holder.transitionImageView.postDelayed(new Runnable() {
                 @Override
-                public boolean onTouch(View v, MotionEvent event) {
+                public void run() {
                     holder.rippleImageView.startRippleAnimation();
-                    return false;
                 }
-            });
+            }, 500);
             //渐引btn
             holder.fillPopImageView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -73,6 +71,12 @@ public class ItemButtonProvider implements ObjectItemProvider {
                     holder.transitionImageView.simulateProgress();
                 }
             });
+            holder.transitionImageView.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    holder.transitionImageView.simulateProgress();
+                }
+            }, 500);
             //运动btn
         }
     }
