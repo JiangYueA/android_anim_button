@@ -6,6 +6,13 @@
     android:background="#f7f7f7"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"/>
+
     <!-- ptr_resistance 滑动阻力 -->
     <com.anim.button.widget.listview.loadmore.PtrClassicFrameLayout
         android:id="@+id/ptrlyt_load"
