@@ -42,6 +42,9 @@ public class MainActivity extends Activity {
         // 将广告条加入到布局中
         adLayout.addView(adView);
 
+        //插屏广告
+        SpotManager.getInstance(this).showSpotAds(this, null);
+
         initView();
     }
 
